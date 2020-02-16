@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;    
+} 
+body{
+    background-color: #000C58;
+    
+}
+.flex-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+
+}
+.first{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    flex-grow: 1;
+    margin-top: 150px;
+}
+
+.first a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.first li{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.first :nth-child(2):hover{
+    cursor: pointer;
+}
+
+.first li input{
+    color: #fff;
+    font-size: 1em;
+    background: #000c58;
+    border-radius: 25px;
+    border: 5px solid orange;
+    height: 100%;
+    padding-left: 5px;
+    width: 100%;  
+}
+
+.first li i {
+    color: orange;
+    margin-left: -25px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.hide{
+    display: none;
+}
+
+.results-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.link{
+    background-color: #e7e7e8;
+    box-sizing: content-box;
+    display: block;
+    color: black;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: auto;
+    padding: 10px;
+    text-decoration: none;
+    width: 80%;
+}
+
+.link:hover{
+    border-left: 3px solid orange;
+    width: calc(80% - 3px);
+}
+
+.link h2{
+    border-bottom: 2px solid gray; 
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 5px;
+}
