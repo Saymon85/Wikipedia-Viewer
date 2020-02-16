@@ -1,8 +1,8 @@
 
 $(function(){
 
-    let input = document.getElementById('inputTxt');
-    let first = $('.first');
+    const input = document.getElementById('inputTxt');
+    const first = $('.first');
     $('img').click(function(){
         $(this).parent().css('display', 'none');
         $('.input').removeClass('hide').animate({display: 'block'}, 1200); 
@@ -15,9 +15,9 @@ $(function(){
     
     input.onkeypress = function(e){
         if(e.key === "Enter"){
-        let searchValue = input.value;
-        let div = document.getElementsByClassName('results-container')[0];
-        let url = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search='+searchValue+'&limit='+10;
+        const searchValue = input.value;
+        const div = document.getElementsByClassName('results-container')[0];
+        const url = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search='+searchValue+'&limit='+10;
         first.animate({'margin':'15px'}, 800);
         $('#clickText').hide();    
         div.innerHTML = " ";
@@ -33,9 +33,9 @@ $(function(){
             success: function(data){
                 for(let i = 1; i < data[1].length; i++){
 
-                    let a = document.createElement('a');
-                    let h2 = document.createElement('h2');
-                    let p = document.createElement('p');
+                    const a = document.createElement('a');
+                    const h2 = document.createElement('h2');
+                    const p = document.createElement('p');
                     a.href=data[3][i];
                     a.target = '_blank';
                     a.className = 'link';
